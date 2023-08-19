@@ -60,23 +60,19 @@ function getRandomQuestions(questions,count)
     return keys
 }
 
-function getRandomQuestions1(questions, count) 
+function addOptionButton(questionBody, question, option)
 {
-    var keys = Object.keys(questions);
-    var shuffledKeys = keys.sort(() => 0.5 - Math.random());
-    return shuffledKeys.slice(0, count);
-}
 
-function addInnerHTML(questionBody, option)
-{
-    console.log(optionCounter)
     var button = document.createElement('input')
     button.type = "radio"
     button.name = "question"+(questionCounter)
-    button.value = option[optionCounter].value
-    button.text = option[optionCounter]
+    button.value = questionBank[question][option]
 
-    questionBody.appendChild(button)
+    var textbox = document.createElement("p")
+    textbox.textContent = Object.keys(questionBank[question])[optionCounter]
+    
+    textbox.appendChild(button)
+    questionBody.appendChild(textbox)
     optionCounter++
     
 }
@@ -87,7 +83,7 @@ function generateOptions(questionBody,question)
     optionCounter=0
     var options = Object.keys(questionBank[question])
     console.log(options)
-    options.forEach(option => addInnerHTML(questionBody, option))
+    options.forEach(option => addOptionButton(questionBody, question, option))
 }
 
 function generateQuestion(question)
@@ -102,13 +98,8 @@ function generateQuestions()
 {
     const selectedQuestions = getRandomQuestions(questionBank,5)
     selectedQuestions.forEach(question => generateQuestion(question))
-
-
-    // var optionButtons = document.createElement("input")
-    // optionButtons.setAttribute('id','response1')
-    // optionButtons.innerHTML = ""
-    // console.log(options)
 }
+
 // function calculateScore() 
 // {
 //     var score = 0;
