@@ -3,7 +3,7 @@ var questionBank = {
     "Did you use public transportation, carpool, bike, or walk instead of driving alone today?": {"yes":20,"no":0}, 
     "How much electricity did you use today? (Low/Medium/High)": {"Low":20,"Medium":10,"High":0},
     "Did you remember to turn off lights and appliances when not in use?": {"yes":20,"no":0}, 
-    "How many vegetarian or plant-based meals did you have today?": {"0":0,"1":5,"2":10,"3":15, "3+":20},
+    "How many vegetarian or plant-based foods did you have today?": {"0":0  ,"1":5,"2":10,"3":15, "3+":20},
     "Did you recycle all the recyclable materials you used today?": {"yes":20,"no":0}, 
     "Did you bring a reusable water bottle or coffee cup with you today?": {"yes":20,"no":0}, 
     "How much water did you consume today? (Low/Medium/High)": {"Low":20,"Medium":10,"High":0},
@@ -73,26 +73,6 @@ function generateQuestions()
     selectedQuestions.forEach(question => generateQuestion(question))
 }
 
-// function calculateScore() 
-// {
-//     var score = 0;
-//     for (var question in questionBank) {
-//         var selectedValue = document.querySelector(input[name="${question}"]:checked);
-//         if (selectedValue) {
-//             score += questionBank[question][selectedValue.value];
-//         }
-// }
-
-// return score;
-// }
-
-// function displayScore() 
-// {
-//     var score = calculateScore();
-//     var resultElement = document.getElementById('result');
-//     resultElement.textContent = "Your score is: ${score}";
-// }
-
 const questionnaire= document.getElementById('questionnaire')
 generateQuestions();
 
@@ -100,15 +80,23 @@ generateQuestions();
 function getScore()
 {
     score = 0 
+    var boxesChecked=0
     var responses = document.querySelectorAll(".response")
     responses.forEach(response=>{
         if (response.checked)
         {
             score+= parseInt(response.value)
+            boxesChecked++
         }
     })
-    console.log(score)
+
+    if(boxesChecked<5)
+    {
+        score = "ERROR: fill in all 5 boxes"
+    }
+    scoreDisplay.textContent = score
 }
 var score=0
 var submitButton = document.getElementById('submit');
 submitButton.addEventListener("click",getScore)
+var scoreDisplay = document.getElementById("scoreDisplay")
