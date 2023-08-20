@@ -6,11 +6,11 @@ var questionBank = {
     "How many vegetarian or plant-based foods did you have today?": {"0":0  ,"1":5,"2":10,"3":15, "3+":20},
     "Did you recycle all the recyclable materials you used today?": {"yes":20,"no":0}, 
     "Did you bring a reusable water bottle or coffee cup with you today?": {"yes":20,"no":0}, 
-    "How much water did you consume today?": {"Low":20,"Medium":10,"High":0},
+    "How much water did you use today?": {"Low":20,"Medium":10,"High":0},
     "Did you participate in any energy-saving practices today, such as using cold water for laundry?": {"yes":20,"no":0}, 
     "How many items did you buy secondhand or borrow instead of purchasing new today?": {"0":0,"1-3":5,"3-5":15,"5+":20},
     "Did you reduce your paper usage by opting for digital communication and notes?": {"yes":20,"no":0}, 
-    "Did you consciously avoid wasting food by eating leftovers or planning meals?": {"yes":20,"no":0}, 
+    "Did you consciously avoid wasting food by eating leftovers or meal planning?": {"yes":20,"no":0}, 
     "How many hours have you spent outdoors enjoying nature today?": {"0":0,"1-3":5,"3-5":15,"5+":20},
     "Did you avoid excessive packaging by choosing products with minimal packaging?": {"yes":20,"no":0},
     "How many fruits did you buy that are exported from other countries?": {"0":20,"1-3":15,"3-5":5,"5+":0},
@@ -25,7 +25,7 @@ var feedBackBank = {
     "How many vegetarian or plant-based foods did you have today?": "Choosing plant-based foods can reduce your own carbon footprint by a lot as the natural resources required to produce animal food is a lot. While on the other hand, plant-based foods require significantly fewer resources and produce less greenhouse gases.",
     "Did you recycle all the recyclable materials you used today?": "Make sure to properly recycle! Recycling your things is a great way to reuse materials instead of extracting new owns and creating a larger carbon footprint. But the only way that can happen is if YOU start recycling properly and making sure that all your recyclables go into the recycling.", 
     "Did you bring a reusable water bottle or coffee cup with you today?": "You should always consider switching to a reusable water bottle or coffee mug instead of a single-use one. Using a reusuable one replaces all of the single use cups that you would have used and relieves some of the burden on landfills, oceans and other places where that garbage could end up.", 
-    "How much water did you consume today?": "Try to limit activities and appliances that use a lot of water. Although it is fine to drink lots of water, wasting it through things such as long showers and water gun fights can ultimately increase the risk of environmental pollution. Saving more water means saving more energy and as water production lowers so does the greenhouse gases.",    
+    "How much water did you use today?": "Try to limit activities and appliances that use a lot of water. Although it is fine to drink lots of water, wasting it through things such as long showers and water gun fights can ultimately increase the risk of environmental pollution. Saving more water means saving more energy and as water production lowers so does the greenhouse gases.",    
     "Did you participate in any energy-saving practices today, such as using cold water for laundry?": "Small changes like using cold water for laundry loads saves energy in boiling that water, reducing your energy usage.",  
     "How many items did you buy secondhand or borrow instead of purchasing new today?": "Most items sold on 2nd hand markets still have plenty of use in them still. Consider buying 2nd hand reduce shipping, packaging, and manufactoring waste!", 
     "Did you reduce your paper usage by opting for digital communication and notes?": "Use tech you already use to write notes/messages to store digitally. They're good for convience and saving trees.",
@@ -155,4 +155,4 @@ var submitButton = document.getElementById('submit');
 submitButton.addEventListener("click",getScoreAndFeedBack)
 var scoreDisplay = document.getElementById("scoreDisplay")
 var feedBackResponses=["Congrats! You're doing a good job keeping a green thumb!"]
-var feedBackHolder
+var feedBackHolder = document.getElementById("feedBackHolder")
