@@ -1,3 +1,4 @@
+
 .logo{
     width: 100px;
 }
@@ -37,10 +38,10 @@ p:hover{
 }
 #submit{
     padding:18px;
-    padding-right:20px;
-    padding-left: 20px;
+    padding-right:30px;
+    padding-left: 30px;
     color:white;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: rgb(83, 147, 95);
     border: none;
     margin-bottom: 30px;
@@ -48,23 +49,11 @@ p:hover{
 }
 #submit:hover{
     transform: scale(1.4);
-    background-color: transparent;
-    border: 3px solid rgb(83, 147, 95);
+    border-radius: 20px;
+    box-shadow: 3px 3px 9px rgb(98, 97, 97);
 }
-
-.feedback{
-    text-align: center;
-    padding: 20px;
-    padding-right: 20px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 40px;
-    transition: all 0.3s;
-}
-.feedback:hover{
-    border-radius: 10px;
-    transform: scale(1.4);
+#submit:active{
+    opacity: 0.4;
 }
 #title{
     text-align: center;
@@ -78,4 +67,17 @@ p:hover{
 #scoreDisplay{
     text-align: center;
     text-decoration: underline;
+}
+#feedBackHolder{
+    margin-bottom: 50px;
+}
+.feedBackResponse{
+    margin-left:100px;
+    margin-right:100px;
+    color:white;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
