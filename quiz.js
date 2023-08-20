@@ -119,9 +119,12 @@ function getScoreAndFeedBack()
     {
         score = "ERROR: Fill in all 5 boxes"
     }
+    else
+    {
+        displayFeedback()
+    }
     scoreDisplay.textContent = score
     console.log(feedBackResponses)
-    displayFeedback()
 }
 
 function getQuestionScoring(question)
