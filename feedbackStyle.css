@@ -1,0 +1,32 @@
+.logo{
+    width: 100px;
+}
+.name{
+    color:antiquewhite;
+    font-size: 40px;
+    text-decoration: none;
+    margin-top: 27px;
+    transition: all 0.5s;
+}
+.name:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.header{
+    display:flex;
+    justify-content: space-around;
+}
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: rgb(157, 185, 116)
+}
+.title{
+    text-align: center;
+    color:bisque;
+    font-size: 40px;
+    text-decoration: overline underline;
+    text-underline-offset: 10px;
+    text-decoration-color: black;
+    margin-bottom: 50px;
+}
