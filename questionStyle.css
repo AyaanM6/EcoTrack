@@ -66,7 +66,7 @@ p:hover{
     border-radius: 10px;
     transform: scale(1.4);
 }
-.title{
+#title{
     text-align: center;
     color:bisque;
     font-size: 40px;

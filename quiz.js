@@ -121,6 +121,8 @@ function getScoreAndFeedBack()
     }
     else
     {
+        feedbackTitle.style.visibility = "visible"
+        feedBackHolder.style.visibility = "visible"
         displayFeedback()
     }
     scoreDisplay.textContent = score
@@ -145,7 +147,7 @@ function getFeedBackResponse(question)
 function createFeedBackBlob(response)
 {
     var feedBackBlob = document.createElement("div")
-    feedBackBlob.setAttribute("class","response")
+    feedBackBlob.setAttribute("class","feedBackResponse")
     feedBackBlob.innerHTML = response
     feedBackHolder.appendChild(feedBackBlob)
 }
@@ -159,4 +161,10 @@ var submitButton = document.getElementById('submit');
 submitButton.addEventListener("click",getScoreAndFeedBack)
 var scoreDisplay = document.getElementById("scoreDisplay")
 var feedBackResponses=["Congrats! You're doing a good job keeping a green thumb!"]
+
+
+
+var feedbackTitle = document.getElementById("title")
 var feedBackHolder = document.getElementById("feedBackHolder")
+feedbackTitle.style.visibility = "hidden"
+feedBackHolder.style.visibility = "hidden"
