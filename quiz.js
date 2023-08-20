@@ -141,14 +141,15 @@ function getFeedBackResponse(question)
 
 function createFeedBackBlob(response)
 {
-    var feeedBackBlob = document.createElement("div")
-    feeedBackBlob.textcontent = response
-    feedBackHolder.appendChild(feeedBackBlob)
+    var feedBackBlob = document.createElement("div")
+    feedBackBlob.setAttribute("class","response")
+    feedBackBlob.innerHTML = response
+    feedBackHolder.appendChild(feedBackBlob)
 }
 function displayFeedback()
 {
-    feedBackHolder = document.getElementById("feedBackHolder")
-    feedBackResponses.forEach(response=> createFeedBackBlob(response))
+    feedBackHolder.innerHTML = ''
+    feedBackResponses.forEach(response => createFeedBackBlob(response))
 }
 var score=0
 var submitButton = document.getElementById('submit');
