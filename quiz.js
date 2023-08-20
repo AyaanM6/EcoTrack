@@ -121,6 +121,7 @@ function getScoreAndFeedBack()
     }
     scoreDisplay.textContent = score
     console.log(feedBackResponses)
+    displayFeedback()
 }
 
 function getQuestionScoring(question)
@@ -136,8 +137,22 @@ function getFeedBackResponse(question)
     console.log(question)
     feedBackResponses.push(feedBackBank[question])
 }
+
+
+function createFeedBackBlob(response)
+{
+    var feeedBackBlob = document.createElement("div")
+    feeedBackBlob.textcontent = response
+    feedBackHolder.appendChild(feeedBackBlob)
+}
+function displayFeedback()
+{
+    feedBackResponses.forEach(response=> createFeedBackBlob(response))
+    feedBackHolder = document.getElementById("feedBackHolder")
+}
 var score=0
 var submitButton = document.getElementById('submit');
 submitButton.addEventListener("click",getScoreAndFeedBack)
 var scoreDisplay = document.getElementById("scoreDisplay")
 var feedBackResponses=["Congrats! You're doing a good job keeping a green thumb!"]
+var feedBackHolder
