@@ -3,6 +3,9 @@ body {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
+    background: #85c089;
+}
+.top{
     background-color: #85c089;
     background-image: url("background.jpg");
     background-position: center;
@@ -11,9 +14,9 @@ body {
 }
 .heading{
     width: 600px;
-    height: 600px;
+    height: 280px;
     margin: auto;
-    position: relative;
+    margin-bottom: 70px;
 }
 .logo{
     display: block;
@@ -46,6 +49,7 @@ a{
 .start{ 
     margin-top: 25px;
     background-color: rgb(164, 216, 85);
+    color: white;
     width: 150px;
     height: 70px;
     font-size: 35px;
@@ -55,10 +59,146 @@ a{
 }
 
 .start:hover{
+    border: solid rgb(164, 216, 85);
     cursor: pointer;
     background-color: transparent;
-    border: solid rgb(164, 216, 85);
-    color: rgb(164, 216, 85);
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+}
+.display-on-hover {
+    display: none;
+    margin-bottom: 40px;
+}
+.statis1{
+  display:flex;
+  margin-left: 130px;
+  margin-right: 100px;
+}
+.img1{
+  width:300px;
+  margin:auto;
 }
 
-
+.stats1 {
+    width: 150px;
+     border: 5px solid #98a39a;
+     background: #98a39a;
+     padding-top: 13px;
+     padding-bottom: 30px;
+     border-radius: 10px;
+     color: #ffffff;
+     font-size: 17px;
+     letter-spacing: 1px;
+     margin-left: 20%;
+     height: 40px;
+     margin-bottom: 90px;
+     font-weight:300;
+     transition: all 0.3s;
+     margin:auto;
+  }
+  
+  .stats1:hover span{
+    display:none
+  }
+  
+  .stats1:hover:before{
+    content:"70% of consumers said they would pay more for brands that are environmentally responsible. (IBM)";
+    font-size: 9px;
+    padding-top: 5px;
+    vertical-align: top;
+  }
+  
+  .stats1:hover{
+    transform: scale(2);
+    padding-bottom: 105px;
+  }
+  .img2{
+    width:300px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .statis2{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 130px;
+    margin-left: 100px;
+  }
+  .stats2 {
+    width: 150px;
+    border: 5px solid #98a39a;
+    background: #98a39a;
+     padding-top: 13px;
+     padding-bottom: 30px;  
+     border-radius: 10px;
+     color: #ffffff;
+     font-size: 17px;
+     vertical-align: center;
+     letter-spacing: 1px;
+     margin-right: 20%;
+     height: 40px;
+     margin-bottom: 90px;
+     font-weight:300;
+     transition: all 0.3s;
+     margin:auto;
+  }
+  
+  .stats2:hover span{
+    display:none
+  }
+  
+  .stats2:hover:before{
+    content:"A faucet leaking a drop of water per second can add up to 165 gallons a month.";
+    font-size: 12px;
+    padding-top: 5px;
+    vertical-align: top;
+  }
+  
+  .stats2:hover{
+    transform: scale(2);
+    padding-bottom: 105px;
+  }
+  .statis3{
+    display:flex;
+    margin-left: 130px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+  }
+  .img3{
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .stats3 {
+    width: 150px;
+    display:block;
+    border: 5px solid #98a39a;
+    background: #98a39a;
+     padding-top: 13px;
+     padding-bottom: 30px;
+     border-radius: 10px;
+     color: #ffffff;
+     font-size: 17px;
+     letter-spacing: 1px;
+     margin-left: 20%;
+     height: 40px;
+     margin-bottom: 90px;
+     font-weight:300;
+     transition: all 0.3s;
+     margin: auto;
+  }
+  
+  .stats3:hover span{
+    display:none
+  }
+  
+  .stats3:hover:before{
+    content:"Currently, we have more than 500 million cars in the world. This number is expected to rise to over a billion by 2030, which means the pollution caused by cars could potentially double by that year.";
+    font-size: 8px;
+    padding-top: 5px;
+    vertical-align: top;
+  }
+  
+  .stats3:hover{
+    transform: scale(2);
+    padding-bottom: 160px;
+  }

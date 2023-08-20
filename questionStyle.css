@@ -1,0 +1,57 @@
+.logo{
+    width: 100px;
+}
+.name{
+    color:antiquewhite;
+    font-size: 40px;
+    text-decoration: none;
+    margin-top: 27px;
+    transition: all 0.5s;
+}
+.name:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.header{
+    display:flex;
+    justify-content: space-around;
+}
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: rgb(157, 185, 116)
+}
+#questionnaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 0.2s;
+}
+p{
+    text-align: center;
+}
+p:hover{
+    transform: scale(1.4);
+}
+#submit{
+    padding:18px;
+    padding-right:20px;
+    padding-left: 20px;
+    color:white;
+    border-radius: 10px;
+    background-color: rgb(83, 147, 95);
+    border: none;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+#submit:hover{
+    transform: scale(1.4);
+    background-color: transparent;
+    border: 3px solid rgb(83, 147, 95);
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
