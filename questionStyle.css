@@ -51,10 +51,7 @@ p:hover{
     background-color: transparent;
     border: 3px solid rgb(83, 147, 95);
 }
-#scoreDisplay{
-    text-align: center;
-    text-decoration: underline;
-}
+
 .feedback{
     text-align: center;
     padding: 20px;
@@ -68,4 +65,17 @@ p:hover{
 .feedback:hover{
     border-radius: 10px;
     transform: scale(1.4);
+}
+.title{
+    text-align: center;
+    color:bisque;
+    font-size: 40px;
+    text-decoration: overline underline;
+    text-underline-offset: 10px;
+    text-decoration-color: black;
+    margin-bottom: 50px;
+}
+#scoreDisplay{
+    text-align: center;
+    text-decoration: underline;
 }

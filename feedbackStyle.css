@@ -21,12 +21,3 @@ body{
     padding: 0px;
     background-color: rgb(157, 185, 116)
 }
-.title{
-    text-align: center;
-    color:bisque;
-    font-size: 40px;
-    text-decoration: overline underline;
-    text-underline-offset: 10px;
-    text-decoration-color: black;
-    margin-bottom: 50px;
-}

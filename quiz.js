@@ -147,8 +147,8 @@ function createFeedBackBlob(response)
 }
 function displayFeedback()
 {
-    feedBackResponses.forEach(response=> createFeedBackBlob(response))
     feedBackHolder = document.getElementById("feedBackHolder")
+    feedBackResponses.forEach(response=> createFeedBackBlob(response))
 }
 var score=0
 var submitButton = document.getElementById('submit');
