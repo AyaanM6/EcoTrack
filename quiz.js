@@ -117,15 +117,16 @@ function getScoreAndFeedBack()
 
     if(boxesChecked<5)
     {
-        score = "ERROR: Fill in all 5 boxes"
+        score = "ERROR, please fill in all 5 boxes"
     }
     else
     {
         feedbackTitle.style.visibility = "visible"
         feedBackHolder.style.visibility = "visible"
         displayFeedback()
+        score = String(score)+"/100"
     }
-    scoreDisplay.textContent = score
+    scoreDisplay.textContent = "Score: "+score
     console.log(feedBackResponses)
 }
 
